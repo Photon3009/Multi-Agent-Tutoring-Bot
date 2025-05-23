@@ -1,10 +1,10 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from agents.tutor_agent import handle_query
+from src.agents.tutor_agent import handle_query
 import logging
 from fastapi.middleware.cors import CORSMiddleware
-from schemas.answer_response import AnswerResponse
-from schemas.question_request import QuestionRequest
+from src.schemas.answer_response import AnswerResponse
+from src.schemas.question_request import QuestionRequest
 
 # Setup logging for FastAPI and application-wide logging
 logging.basicConfig(

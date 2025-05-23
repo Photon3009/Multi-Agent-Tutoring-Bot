@@ -1,5 +1,6 @@
-from tools.constants_lookup import get_constant
-from gemini import ask_gemini
+from src.tools.constants_lookup import get_constant
+from src.gemini import ask_gemini
+
 
 # This function handles physics-related queries.
 def handle_physics(query):

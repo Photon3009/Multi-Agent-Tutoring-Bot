@@ -1,7 +1,8 @@
 from sympy import symbols, Eq, solve, sympify
-from tools.calculator import evaluate_expression
-from gemini import ask_gemini
+from src.tools.calculator import evaluate_expression
+from src.gemini import ask_gemini
 import re
+
 
 # This function handles math-related queries.
 def handle_math(query):
