@@ -60,3 +60,7 @@ To Ask Tutor Agent
   "answer": "The speed of light is 299,792,458 m/s"
 }
 ```
+### Deployed APIs 
+```bash
+https://multi-agent-tutoring-bot.onrender.com/docs
+```
