@@ -29,7 +29,7 @@ This assistant (the "Tutor Agent") handle questions across different subjects. I
 3. **Run the following command to start the dev server**
 
    ```bash
-   fastapi dev src/main.py
+   uvicorn src.main:app
    ```
 
 ## 🌐 Accessing the Application
@@ -47,14 +47,16 @@ To Ask Tutor Agent
 - POST /ask
 - Body:
 
-````json
-    {
-        "question": "What is the speed of light?"
-    }
-````
-- Response:
 ```json
-    {
-        "answer": "The speed of light is 299,792,458 m/s"
-    }
-````
+{
+  "question": "What is the speed of light?"
+}
+```
+
+- Response:
+
+```json
+{
+  "answer": "The speed of light is 299,792,458 m/s"
+}
+```
